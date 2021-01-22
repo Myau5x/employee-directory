@@ -1,24 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import List from "./components/List";
 
-function App() {
+const groceries = [
+  {
+    id: 1,
+    name: "Milk",
+    purchased: true
+  },
+  {
+    id: 2,
+    name: "Eggs",
+    purchased: true
+  },
+  {
+    id: 3,
+    name: "Cheese",
+    purchased: false
+  },
+  {
+    id: 4,
+    name: "Cake Mix",
+    purchased: false
+  },
+  {
+    id: 5,
+    name: "Carrots",
+    purchased: false
+  },
+  {
+    id: 6,
+    name: "Juice",
+    purchased: true
+  }
+];
+///https://randomuser.me/api/?results=9
+
+
+
+
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h1>Our International company</h1>
+    <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope='col'>image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope='col'>Age</th>
+        <th scope='col'>email</th>
+        <th scope="col">City</th>
+        
+      </tr>
+    </thead>
+  <List employees={props.employees} />
+  </table>
+  </main>
   );
 }
 
