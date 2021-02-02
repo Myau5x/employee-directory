@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Employee Directory
+
+Project allows to sort and filter employee directory from imaginary international company.
+
+## Overview
+
+This is react app that generate employee directory using [Randomuser.me](https://randomuser.me/) API. Also it allows to sort and filter employees by name.
+
+### How it look 
+
+![look](./screenshots/search.png)
+
+### About my code
+All my code is in `src` folder.
+Component  `src/components/EmplContainer.js` contains almost all logic.
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
