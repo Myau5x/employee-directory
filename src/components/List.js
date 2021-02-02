@@ -25,8 +25,8 @@ function List(props) {
 //{props.employees.map(item => <EmpRow {...item} />)}
 
 function List(props) {
-  console.log("I m here");
-  console.log(props);
+  //console.log("I m here");
+  //console.log(props);
  // console.log(JSON.stringify(props.employees[0].name.first));
   return (
     <tbody>
