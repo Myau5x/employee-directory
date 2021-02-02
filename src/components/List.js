@@ -1,5 +1,6 @@
 import React from "react";
-
+import EmpRow from "./EmpRow";
+/*
 function List(props) {
   return (
     <tbody>
@@ -17,6 +18,26 @@ function List(props) {
 
     
   );
+}
+*/
+//{//JSON.stringify(props.employees)}
+///{props.employees.map(item => <div>{JSON.stringify(item)}</div>)}
+//{props.employees.map(item => <EmpRow {...item} />)}
+
+function List(props) {
+  console.log("I m here");
+  console.log(props);
+ // console.log(JSON.stringify(props.employees[0].name.first));
+  return (
+    <tbody>
+      
+      {props.employees.map(item => <EmpRow {...item} />)}
+    </tbody>
+   
+    
+
+  );
+  
 }
 
 export default List;
